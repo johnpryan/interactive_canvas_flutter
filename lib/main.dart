@@ -44,11 +44,6 @@ class _SpinningSquareState extends State<SpinningSquare>
     var canvas = interactiveCanvas;
     canvas.ready(InteractiveCanvasCallbacks(
       onUpdate: allowInterop((OnUpdateData data) {
-        print('plugin invoking onUpdate $data');
-        print('data runtimeType ${data.runtimeType}');
-        print('data.command = ${data.command}');
-        print('data.tint = ${data.tint}');
-        print('data.spin = ${data.spin}');
         if (data.command == 'SPIN') {
           if (data.spin == true) {
             _animation.repeat();
