@@ -1,16 +1,27 @@
 # interactive_canvas_flutter
 
-A new Flutter project.
+Demonstrates how to build an [Interactive
+Canvas](https://developers.google.com/actions/interactivecanvas/) app with
+Flutter. This sample is based on , but uses Flutter for running the app.
 
-## Getting Started
+## Prerequisites
 
-This project is a starting point for a Flutter application.
+Make sure you follow all of the steps in the [Interactive canvas web app
+codelab](https://developers.google.com/actions/interactivecanvas/build/web-app)
+codelab on the
 
-A few resources to get you started if this is your first Flutter project:
+Use the Flutter master channel `flutter channel master && flutter upgrade`
+(This project works with commit 0df1594ba.)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Building
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+./build.sh
+```
+
+## Deploying
+
+```
+cd functions/
+firebase deploy --project {PROJECT_ID}
+```
