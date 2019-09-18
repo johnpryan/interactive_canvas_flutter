@@ -1,8 +1,8 @@
 # interactive_canvas_flutter
 
 Demonstrates how to build an [Interactive
-Canvas](https://developers.google.com/actions/interactivecanvas/) app with
-Flutter. This sample is based on , but uses Flutter for running the app.
+Canvas](https://developers.google.com/actions/interactivecanvas/) app
+using Flutter.
 
 ## Prerequisites
 
