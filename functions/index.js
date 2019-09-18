@@ -36,7 +36,8 @@ app.intent('welcome', (conv) => {
     conv.close("Sorry, this device does not support Interactive Canvas!");
     return;
   }
-  conv.ask('Welcome! Do you want me to change color or pause spinning? ' +
+  conv.ask('Welcome! This is a simple demo of Flutter running in Interactive Canvas. ' +
+    'Do you want me to change color or pause spinning? ' +
     'You can also tell me to ask you later.');
   conv.ask(new HtmlResponse({
     url: `https://${firebaseConfig.projectId}.firebaseapp.com`,
